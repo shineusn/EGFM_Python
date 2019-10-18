@@ -1,10 +1,10 @@
 # EGFM-Python
 Empirical Green's Function Method to synthesis strong ground motion complete in Python
 
-# Emprical Green's Function method
+# Emprical Green's Function Method
 - [EGFM](http://www.kojiro-irikura.jp/research/research_e.html)
 
-# EGF by Python
+# EGFM by Python
 - Why ? Easy to Modify and Visualize
 
 
@@ -15,7 +15,7 @@ Empirical Green's Function Method to synthesis strong ground motion complete in 
 - Vectorize to quickly run: calWeight
 - Filter and FFT by numpy
 
-## egfm_pc
+## egfm_pc.py
 1. Initialize variables;
 2. Read parameters from input file;
 3. Read time histories of main and after shocks;
@@ -25,6 +25,7 @@ Empirical Green's Function Method to synthesis strong ground motion complete in 
 7. Rmean and visualize
 
 ## Example
+One component in Miyake, 2003, BSSA
 - Main Schock: 1997 March, Kagoshima-ken Hokuseibu $M_{JMA}$ 6.5  
 - Station: K-NET, KGS002
 - After Schock: 1997 March, Kagoshima-ken Hokuseibu $M_{JMA}$ 4.7
@@ -44,14 +45,16 @@ Table Parameters of main and after shocks
 </div>
   
 Fig. Amplitude spectra of mainshock and synthetic ground motions
-
+ 
+cd ./example
 ## Run follow script in Ipython
 ```python
 from egfm import *
 zoo2th('mainShock.zoo', 'mainTH.txt')
 zoo2th('afterShock.zoo', 'egfTH.txt')
 %run egfm_pc.py
-```
+```  
+(enter input file name) 1997KKH.txt
 
     
 
