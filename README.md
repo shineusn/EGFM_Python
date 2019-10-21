@@ -47,7 +47,7 @@ Table Parameters of main and after shocks
 Fig. Amplitude spectra of mainshock and synthetic ground motions
  
 cd ./example
-## Run follow script in Ipython
+## Run follow script in jupyter notebook
 ```python
 from egfm import *
 zoo2th('mainShock.zoo', 'mainTH.txt')
